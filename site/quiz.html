@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Quiz · Jargon Jar</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="20 questions on UX, UI and AI terms, easy to hard, each answer explained. Get your level: Curious, Practitioner, Specialist or Expert.">
+<link rel="canonical" href="https://jargonjar.com/quiz.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Jargon Jar">
+<meta property="og:title" content="Quiz · Jargon Jar">
+<meta property="og:description" content="20 questions on UX, UI and AI terms, easy to hard, each answer explained. Get your level: Curious, Practitioner, Specialist or Expert.">
+<meta property="og:url" content="https://jargonjar.com/quiz.html">
+<meta property="og:image" content="https://jargonjar.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#FBF8F3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#151210" media="(prefers-color-scheme: dark)">
+<script>
+/* Runs before paint: theme, and whether to show the preloader (first visit per session, motion allowed). */
+(function(){var d=document.documentElement;d.classList.add("js");
+try{var t=localStorage.getItem("jj-theme");if(t==="dark"||t==="light")d.setAttribute("data-theme",t)}catch(e){}
+var rm=window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches,seen=false;
+try{seen=sessionStorage.getItem("jj-seen")==="1"}catch(e){}
+d.classList.add(!rm&&!seen?"is-preloading":"is-ready");})();
+</script>
+<!-- Before launch: self-host Fraunces (variable, Latin subset) and Instrument Sans as woff2 with font-display: swap. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..700,0..100,0..1&family=Instrument+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="assets/styles.css">
+<script defer src="https://cloud.umami.is/script.js" data-website-id="YOUR-UMAMI-ID"></script>
+<script defer src="assets/app.js"></script>
+</head>
+<body data-page="quiz">
+<a class="skip" href="#main">Skip to content</a>
+<div class="preloader" aria-hidden="true">
+  <div class="preloader-top hud-text"><span>Jargon Jar</span><span>Filling the jar</span></div>
+  <div class="preloader-count"><span data-pre-count>000</span><small>%</small></div>
+  <div class="preloader-bar"><span></span></div>
+</div>
+<header class="site-header" id="siteHeader">
+  <div class="hud" aria-hidden="true">
+    <div class="frame hud-row">
+      <span class="live hud-hide-sm">JJ · Quiz · 02/05</span>
+      <span>Q <b data-hud="q">--/20</b></span><span>Score <b data-hud="score">00</b> pts</span><span class="hud-hide-sm">Time <b data-hud="time">00:00</b></span>
+      <span>Geneva <b data-hud="clock">--:--:--</b></span>
+    </div>
+  </div>
+  <div class="frame nav-row">
+    <a class="logo" href="index.html" aria-label="Jargon Jar, home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="9" y="3" width="14" height="5" rx="1.5" class="f-t"/><rect x="5.5" y="9.5" width="21" height="20" rx="6" fill="none" class="s-t" stroke-width="2"/><rect x="9.5" y="20" width="8" height="5" rx="1.2" class="f-a"/><rect x="18.5" y="20" width="4" height="5" rx="1.2" class="f-t"/><rect x="9.5" y="14" width="5" height="5" rx="1.2" class="f-t"/></svg>
+      Jargon Jar
+    </a>
+    <nav class="nav" aria-label="Main"><a href="quiz.html" aria-current="page"><span class="n">01</span>Quiz</a><a href="resources.html"><span class="n">02</span>Resources</a><a href="about.html"><span class="n">03</span>About</a><a href="contact.html"><span class="n">04</span>Contact</a></nav>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode">
+      <svg class="icon moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+      <svg class="icon sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+    </button>
+  </div>
+</header>
+<main id="main" class="quiz-wrap frame">
+  <div class="column" id="quizRoot">
+    <h1 class="page-title">The quiz</h1>
+    <p class="lead" style="margin-top:16px">Loading questions…</p>
+    <noscript><p class="lead">The quiz needs JavaScript to run. Everything else on this site works without it.</p></noscript>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="frame footer-grid">
+    <p class="footer-mark">Know your <strong>terms.</strong><br>Know your <strong class="accent">level.</strong></p>
+    <div style="display:flex;flex-direction:column;gap:10px">
+      <p><strong style="color:var(--text)">Privacy.</strong> Visits are counted with Umami, a cookieless analytics tool. No cookies, no personal profiles, no ads. Your quiz answers stay in your browser.</p>
+      <p>This is a quick check, not a certification.</p>
+    </div>
+    <nav aria-label="Footer"><a href="quiz.html">Quiz</a><a href="resources.html">Resources</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+    <div class="footer-base hud-text"><span>© 2026 Clara Boustany Le Roux</span><span>Jargon Jar · v1</span></div>
+  </div>
+</footer>
+<script defer src="assets/quiz.js"></script>
+</body>
+</html>

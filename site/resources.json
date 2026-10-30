@@ -1,0 +1,191 @@
+[
+ {
+  "category": "ux",
+  "level": "Curious",
+  "type": "Article",
+  "time": "10 min",
+  "title": "10 Usability Heuristics for User Interface Design",
+  "source": "Nielsen Norman Group",
+  "url": "https://www.nngroup.com/articles/ten-usability-heuristics/"
+ },
+ {
+  "category": "ux",
+  "level": "Curious",
+  "type": "Article",
+  "time": "8 min",
+  "title": "Journey Mapping 101",
+  "source": "Nielsen Norman Group",
+  "url": "https://www.nngroup.com/articles/journey-mapping-101/"
+ },
+ {
+  "category": "ux",
+  "level": "Practitioner",
+  "type": "Article",
+  "time": "7 min",
+  "title": "Mental Models and User Experience Design",
+  "source": "Nielsen Norman Group",
+  "url": "https://www.nngroup.com/articles/mental-models/"
+ },
+ {
+  "category": "ux",
+  "level": "Practitioner",
+  "type": "Article",
+  "time": "12 min",
+  "title": "When to Use Which UX Research Methods",
+  "source": "Nielsen Norman Group",
+  "url": "https://www.nngroup.com/articles/which-ux-research-methods/"
+ },
+ {
+  "category": "ux",
+  "level": "Practitioner",
+  "type": "Reference",
+  "time": "15 min",
+  "title": "Laws of UX",
+  "source": "Jon Yablonski",
+  "url": "https://lawsofux.com/"
+ },
+ {
+  "category": "ux",
+  "level": "Specialist",
+  "type": "Article",
+  "time": "8 min",
+  "title": "Affinity Diagramming",
+  "source": "Nielsen Norman Group",
+  "url": "https://www.nngroup.com/articles/affinity-diagram/"
+ },
+ {
+  "category": "ux",
+  "level": "Specialist",
+  "type": "Guide",
+  "time": "30 min",
+  "title": "Service Manual",
+  "source": "GOV.UK",
+  "url": "https://www.gov.uk/service-manual"
+ },
+ {
+  "category": "ui",
+  "level": "Curious",
+  "type": "Book",
+  "time": "3 h",
+  "title": "Refactoring UI",
+  "source": "Adam Wathan & Steve Schoger",
+  "url": "https://www.refactoringui.com/"
+ },
+ {
+  "category": "ui",
+  "level": "Curious",
+  "type": "Guide",
+  "time": "10 min",
+  "title": "WCAG 2 Overview",
+  "source": "W3C Web Accessibility Initiative",
+  "url": "https://www.w3.org/WAI/standards-guidelines/wcag/"
+ },
+ {
+  "category": "ui",
+  "level": "Curious",
+  "type": "Article",
+  "time": "10 min",
+  "title": "Introduction to Web Accessibility",
+  "source": "W3C Web Accessibility Initiative",
+  "url": "https://www.w3.org/WAI/fundamentals/accessibility-intro/"
+ },
+ {
+  "category": "ui",
+  "level": "Practitioner",
+  "type": "Article",
+  "time": "6 min",
+  "title": "Progressive Disclosure",
+  "source": "Nielsen Norman Group",
+  "url": "https://www.nngroup.com/articles/progressive-disclosure/"
+ },
+ {
+  "category": "ui",
+  "level": "Practitioner",
+  "type": "Book",
+  "time": "2 h",
+  "title": "Atomic Design",
+  "source": "Brad Frost",
+  "url": "https://atomicdesign.bradfrost.com/"
+ },
+ {
+  "category": "ui",
+  "level": "Practitioner",
+  "type": "Guide",
+  "time": "20 min",
+  "title": "Material Design 3",
+  "source": "Google",
+  "url": "https://m3.material.io/"
+ },
+ {
+  "category": "ui",
+  "level": "Specialist",
+  "type": "Guide",
+  "time": "20 min",
+  "title": "Human Interface Guidelines",
+  "source": "Apple",
+  "url": "https://developer.apple.com/design/human-interface-guidelines/"
+ },
+ {
+  "category": "ai",
+  "level": "Curious",
+  "type": "Tool",
+  "time": "5 min",
+  "title": "Tokenizer: see how text splits into tokens",
+  "source": "OpenAI",
+  "url": "https://platform.openai.com/tokenizer"
+ },
+ {
+  "category": "ai",
+  "level": "Curious",
+  "type": "Guide",
+  "time": "15 min",
+  "title": "Prompt engineering overview",
+  "source": "Anthropic",
+  "url": "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview"
+ },
+ {
+  "category": "ai",
+  "level": "Practitioner",
+  "type": "Guide",
+  "time": "45 min",
+  "title": "People + AI Guidebook",
+  "source": "Google PAIR",
+  "url": "https://pair.withgoogle.com/guidebook/"
+ },
+ {
+  "category": "ai",
+  "level": "Specialist",
+  "type": "Article",
+  "time": "15 min",
+  "title": "Guidelines for Human-AI Interaction",
+  "source": "Microsoft Research",
+  "url": "https://www.microsoft.com/en-us/research/project/guidelines-for-human-ai-interaction/"
+ },
+ {
+  "category": "ai",
+  "level": "Specialist",
+  "type": "Course",
+  "time": "15 h",
+  "title": "Machine Learning Crash Course",
+  "source": "Google",
+  "url": "https://developers.google.com/machine-learning/crash-course"
+ },
+ {
+  "category": "ai",
+  "level": "Expert",
+  "type": "Article",
+  "time": "25 min",
+  "title": "The Illustrated Transformer",
+  "source": "Jay Alammar",
+  "url": "https://jalammar.github.io/illustrated-transformer/"
+ },
+ {
+  "category": "ai",
+  "level": "Expert",
+  "type": "Course",
+  "time": "10 h",
+  "title": "Hugging Face Learn",
+  "source": "Hugging Face",
+  "url": "https://huggingface.co/learn"
+ }
+]

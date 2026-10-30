@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Jargon Jar</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="A 5-minute quiz on UX, UI and AI vocabulary. Get your level, see every answer explained, and find what to read next.">
+<link rel="canonical" href="https://jargonjar.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Jargon Jar">
+<meta property="og:title" content="Jargon Jar">
+<meta property="og:description" content="A 5-minute quiz on UX, UI and AI vocabulary. Get your level, see every answer explained, and find what to read next.">
+<meta property="og:url" content="https://jargonjar.com/">
+<meta property="og:image" content="https://jargonjar.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#FBF8F3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#151210" media="(prefers-color-scheme: dark)">
+<script>
+/* Runs before paint: theme, and whether to show the preloader (first visit per session, motion allowed). */
+(function(){var d=document.documentElement;d.classList.add("js");
+try{var t=localStorage.getItem("jj-theme");if(t==="dark"||t==="light")d.setAttribute("data-theme",t)}catch(e){}
+var rm=window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches,seen=false;
+try{seen=sessionStorage.getItem("jj-seen")==="1"}catch(e){}
+d.classList.add(!rm&&!seen?"is-preloading":"is-ready");})();
+</script>
+<!-- Before launch: self-host Fraunces (variable, Latin subset) and Instrument Sans as woff2 with font-display: swap. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..700,0..100,0..1&family=Instrument+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="assets/styles.css">
+<script defer src="https://cloud.umami.is/script.js" data-website-id="YOUR-UMAMI-ID"></script>
+<script defer src="assets/app.js"></script>
+</head>
+<body data-page="home">
+<a class="skip" href="#main">Skip to content</a>
+<div class="preloader" aria-hidden="true">
+  <div class="preloader-top hud-text"><span>Jargon Jar</span><span>Filling the jar</span></div>
+  <div class="preloader-count"><span data-pre-count>000</span><small>%</small></div>
+  <div class="preloader-bar"><span></span></div>
+</div>
+<header class="site-header" id="siteHeader">
+  <div class="hud" aria-hidden="true">
+    <div class="frame hud-row">
+      <span class="live hud-hide-sm">JJ · Home · 01/05</span>
+      <span>Scroll <b data-hud="scroll">000</b>%</span>
+      <span>Geneva <b data-hud="clock">--:--:--</b></span>
+    </div>
+  </div>
+  <div class="frame nav-row">
+    <a class="logo" href="index.html" aria-label="Jargon Jar, home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="9" y="3" width="14" height="5" rx="1.5" class="f-t"/><rect x="5.5" y="9.5" width="21" height="20" rx="6" fill="none" class="s-t" stroke-width="2"/><rect x="9.5" y="20" width="8" height="5" rx="1.2" class="f-a"/><rect x="18.5" y="20" width="4" height="5" rx="1.2" class="f-t"/><rect x="9.5" y="14" width="5" height="5" rx="1.2" class="f-t"/></svg>
+      Jargon Jar
+    </a>
+    <nav class="nav" aria-label="Main"><a href="quiz.html"><span class="n">01</span>Quiz</a><a href="resources.html"><span class="n">02</span>Resources</a><a href="about.html"><span class="n">03</span>About</a><a href="contact.html"><span class="n">04</span>Contact</a></nav>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode">
+      <svg class="icon moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+      <svg class="icon sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+    </button>
+  </div>
+</header>
+<main id="main">
+  <section class="hero frame" aria-labelledby="heroTitle">
+    <p class="hero-meta hud-text"><span>Vocabulary check</span><span>UX / UI / AI</span><span>By a working designer</span></p>
+    <h1 class="display lines" id="heroTitle">
+      <span class="line"><span style="--i:0">Know your <strong>terms.</strong></span></span>
+      <span class="line"><span style="--i:1">Know your <strong class="hl">level.</strong></span></span>
+    </h1>
+    <div class="hero-foot">
+      <div class="hero-copy">
+        <p class="lead">A five-minute quiz on the words design teams use every day. Every answer is explained, and every gap comes with something worth reading.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="quiz.html">Start the quiz <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+          <a class="btn btn-ghost" href="#how">How it works</a>
+        </div>
+      </div>
+      <dl class="readout" aria-label="Quiz facts">
+        <div><dt>Questions</dt><dd>20</dd></div>
+        <div><dt>Time</dt><dd>~5 min</dd></div>
+        <div><dt>Levels</dt><dd>04</dd></div>
+        <div><dt>Cost</dt><dd>Free</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track"><ul><li>Affordance</li><li>Heuristic</li><li>Design token</li><li>Hallucination</li><li>Context window</li><li>Persona</li><li>Kerning</li><li>Embedding</li><li>Tree testing</li><li>Progressive disclosure</li><li>Prompt injection</li><li>Empty state</li><li>Fitts’s Law</li><li>RAG</li><li>x-height</li><li>Journey map</li><li>Few-shot</li><li>WCAG 2.2</li></ul><ul><li>Affordance</li><li>Heuristic</li><li>Design token</li><li>Hallucination</li><li>Context window</li><li>Persona</li><li>Kerning</li><li>Embedding</li><li>Tree testing</li><li>Progressive disclosure</li><li>Prompt injection</li><li>Empty state</li><li>Fitts’s Law</li><li>RAG</li><li>x-height</li><li>Journey map</li><li>Few-shot</li><li>WCAG 2.2</li></ul></div>
+  </div>
+
+  <section class="section frame" id="how" aria-labelledby="howTitle">
+    <p class="sec-label hud-text"><span class="num">01</span><span>How it works</span></p>
+    <div class="sec-head"><h2 id="howTitle">Five minutes, three steps.</h2><p>No sign-up. Your answers stay in your browser.</p></div>
+    <div class="timeline">
+      <div class="timeline-line" aria-hidden="true"><span></span></div>
+      <ol>
+        <li data-reveal><span class="hud-text">Step 01 · about 4 min</span><h3>Answer</h3><p>20 questions on UX, UI, AI or a mix. Easy terms first, trickier ones later.</p></li>
+        <li data-reveal><span class="hud-text">Step 02 · instant</span><h3>Get your level</h3><p>Harder questions count more. You see your level, your score per area and how it was worked out.</p></li>
+        <li data-reveal><span class="hud-text">Step 03 · whenever you like</span><h3>Learn the gaps</h3><p>Every answer is explained. Your weakest area comes with three short reads.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section frame" aria-labelledby="levelsTitle">
+    <p class="sec-label hud-text"><span class="num">02</span><span>The levels</span></p>
+    <div class="sec-head"><h2 id="levelsTitle">Four levels, from Curious to Expert.</h2><p>Your level comes from your weighted score. It tells you where you stand today, not who you are.</p></div>
+    <ul class="stack" role="list"><li class="stack-card" style="--i:0"><article class="level-card">
+        <div class="top hud-text"><span>Level 01/04</span><span>0–44% of points</span></div>
+        <div><h3>Curious</h3><p>You know many of the words exist. You’re starting to connect them to real work.</p></div>
+        <svg class="jar" viewBox="0 0 80 96" width="180" height="216" aria-hidden="true"><rect x="22" y="4" width="36" height="10" rx="3" class="f-t"/><rect x="12" y="17" width="56" height="74" rx="14" fill="none" class="s-t" stroke-width="2.5"/><rect x="18" y="72" width="24" height="12" rx="2.5" class="f-a"/><rect x="45" y="72" width="17" height="12" rx="2.5" class="f-t"/></svg>
+      </article></li><li class="stack-card" style="--i:1"><article class="level-card">
+        <div class="top hud-text"><span>Level 02/04</span><span>45–69% of points</span></div>
+        <div><h3>Practitioner</h3><p>You use the core terms correctly every day. Some specialist terms still slip.</p></div>
+        <svg class="jar" viewBox="0 0 80 96" width="180" height="216" aria-hidden="true"><rect x="22" y="4" width="36" height="10" rx="3" class="f-t"/><rect x="12" y="17" width="56" height="74" rx="14" fill="none" class="s-t" stroke-width="2.5"/><rect x="18" y="72" width="24" height="12" rx="2.5" class="f-a"/><rect x="45" y="72" width="17" height="12" rx="2.5" class="f-t"/><rect x="18" y="57" width="15" height="12" rx="2.5" class="f-t"/><rect x="36" y="57" width="26" height="12" rx="2.5" class="f-a"/></svg>
+      </article></li><li class="stack-card" style="--i:2"><article class="level-card">
+        <div class="top hud-text"><span>Level 03/04</span><span>70–87% of points</span></div>
+        <div><h3>Specialist</h3><p>You know the nuances and can explain them to your team.</p></div>
+        <svg class="jar" viewBox="0 0 80 96" width="180" height="216" aria-hidden="true"><rect x="22" y="4" width="36" height="10" rx="3" class="f-t"/><rect x="12" y="17" width="56" height="74" rx="14" fill="none" class="s-t" stroke-width="2.5"/><rect x="18" y="72" width="24" height="12" rx="2.5" class="f-a"/><rect x="45" y="72" width="17" height="12" rx="2.5" class="f-t"/><rect x="18" y="57" width="15" height="12" rx="2.5" class="f-t"/><rect x="36" y="57" width="26" height="12" rx="2.5" class="f-a"/><rect x="18" y="42" width="28" height="12" rx="2.5" class="f-a"/><rect x="49" y="42" width="13" height="12" rx="2.5" class="f-t"/></svg>
+      </article></li><li class="stack-card" style="--i:3"><article class="level-card">
+        <div class="top hud-text"><span>Level 04/04</span><span>88–100% of points</span></div>
+        <div><h3>Expert</h3><p>You spot misuse, teach the terms and can argue the edge cases.</p></div>
+        <svg class="jar" viewBox="0 0 80 96" width="180" height="216" aria-hidden="true"><rect x="22" y="4" width="36" height="10" rx="3" class="f-t"/><rect x="12" y="17" width="56" height="74" rx="14" fill="none" class="s-t" stroke-width="2.5"/><rect x="18" y="72" width="24" height="12" rx="2.5" class="f-a"/><rect x="45" y="72" width="17" height="12" rx="2.5" class="f-t"/><rect x="18" y="57" width="15" height="12" rx="2.5" class="f-t"/><rect x="36" y="57" width="26" height="12" rx="2.5" class="f-a"/><rect x="18" y="42" width="28" height="12" rx="2.5" class="f-a"/><rect x="49" y="42" width="13" height="12" rx="2.5" class="f-t"/><rect x="18" y="27" width="19" height="12" rx="2.5" class="f-t"/><rect x="40" y="27" width="22" height="12" rx="2.5" class="f-a"/></svg>
+      </article></li></ul>
+  </section>
+
+  <section class="section frame" aria-labelledby="sampleTitle">
+    <p class="sec-label hud-text"><span class="num">03</span><span>Try one</span></p>
+    <div class="sec-head"><h2 id="sampleTitle">A sample question.</h2><p>Pick an answer to see how feedback works.</p></div>
+    <div class="column"><div id="sample"></div></div>
+    <script type="application/json" id="sampleData">{"id": 48, "category": "ai", "difficulty": 2, "term": "Context window", "question": "A model’s context window is…", "correct": "The maximum amount of text it can consider at once", "distractors": ["The chat panel on the screen", "How long it remembers you between sessions", "The range of topics it was trained on"], "explanation": "The context window caps how many tokens fit in one request, prompt and response included. Past that, earlier content has to be cut or summarized."}</script>
+  </section>
+
+  <section class="section frame" aria-labelledby="trustTitle">
+    <p class="sec-label hud-text"><span class="num">04</span><span>Who’s behind it</span></p>
+    <div class="trust">
+      <figure class="portrait-photo">
+        <img src="assets/img/clara-portrait.jpg" width="640" height="640" loading="lazy" decoding="async" alt="Pencil-style portrait of Clara Boustany Le Roux, smiling, with long hair.">
+      </figure>
+      <div class="prose" style="gap:16px">
+        <h2 id="trustTitle">Written by a designer who uses these words every day.</h2>
+        <p>Clara Boustany Le Roux, UX/UI and AI designer. 7 years of practice, including Pictet Asset Management (design system foundations and an internal app redesign) and ISO. Independent from November 2026, designing with AI for the past year.</p>
+        <p class="muted">This is a quick check, not a certification.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section frame">
+    <div class="cta">
+      <p class="sec-label hud-text" style="width:100%;margin:0"><span class="num">05</span><span>Your turn</span></p>
+      <h2 class="page-title">Ready to see where <strong class="accent">you</strong> stand?</h2>
+      <a class="btn btn-primary" href="quiz.html">Start the quiz <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="frame footer-grid">
+    <p class="footer-mark">Know your <strong>terms.</strong><br>Know your <strong class="accent">level.</strong></p>
+    <div style="display:flex;flex-direction:column;gap:10px">
+      <p><strong style="color:var(--text)">Privacy.</strong> Visits are counted with Umami, a cookieless analytics tool. No cookies, no personal profiles, no ads. Your quiz answers stay in your browser.</p>
+      <p>This is a quick check, not a certification.</p>
+    </div>
+    <nav aria-label="Footer"><a href="quiz.html">Quiz</a><a href="resources.html">Resources</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+    <div class="footer-base hud-text"><span>© 2026 Clara Boustany Le Roux</span><span>Jargon Jar · v1</span></div>
+  </div>
+</footer>
+<script defer src="assets/quiz.js"></script>
+</body>
+</html>
