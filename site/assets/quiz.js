@@ -9,8 +9,10 @@
   const shuffle = (arr) => { const a = arr.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
 
   const CATS = { ux: "UX", ui: "UI", ai: "AI" };
-  const DIFF = { 1: "Easy", 2: "Medium", 3: "Hard" };
-  const ROUND = 20;
+  const DIFF = { 1: "Easy", 2: "Medium", 3: "Hard", 4: "Expert" };
+  const TIERS = [1, 2, 3, 4];
+  const PER_TIER = 3;            // 3 questions per level, one tier per level
+  const ROUND = TIERS.length * PER_TIER;   // 12
   const LEVELS = [
     { name: "Curious", min: 0 },
     { name: "Practitioner", min: 45 },
@@ -137,7 +139,7 @@
       const q = JSON.parse($("#sampleData").textContent);
       const ctl = mountQuestion(sample, { q: q.question, a: [q.correct].concat(q.distractors), ex: q.explanation }, {
         header: `<div class="q-top hud-text"><span>Sample · ${CATS[q.category]} · ${DIFF[q.difficulty]}</span><span>Q 01/01</span></div>`,
-        onAnswer: () => ctl.setNext(`<a class="btn btn-primary" href="quiz.html">Take all 20 ${ICON.arrow}</a>`)
+        onAnswer: () => ctl.setNext(`<a class="btn btn-primary" href="quiz.html">Take all ${ROUND} ${ICON.arrow}</a>`)
       });
       $(".question", sample).removeAttribute("tabindex");
     } catch (e) { sample.hidden = true; }
@@ -165,26 +167,22 @@
       `<div class="prose" style="gap:28px">` +
       `<p class="sec-label hud-text"><span class="num">00</span><span>Set up your round</span></p>` +
       `<h1 class="page-title lines" tabindex="-1"><span class="line"><span>Pick a <strong class="hl">category.</strong></span></span></h1>` +
-      `<p class="lead">${ROUND} questions. Easy terms first, harder ones later. Each answer comes with a short explanation.</p>` +
+      `<p class="lead">${ROUND} questions, ${PER_TIER} per level. Easy terms first, harder ones later. Each answer comes with a short explanation.</p>` +
       `<fieldset class="cat-picker"><legend class="hud-text">Category</legend>${["mix", "ux", "ui", "ai"].map((k) => `<div class="cat-option"><input type="radio" name="cat" id="cat-${k}" value="${k}"${state.cat === k ? " checked" : ""}><label for="cat-${k}"><b>${CAT_INFO[k][0]}</b><span>${CAT_INFO[k][1]}</span></label></div>`).join("")}</fieldset>` +
-      `<div class="btn-row"><button class="btn btn-primary" type="button" id="startRound">Start the round ${ICON.arrow}</button><span class="hud-text">${ROUND} questions · about 5 min</span></div>` +
-      `<p class="hud-text">Scoring · Easy 1 pt · Medium 2 pts · Hard 3 pts</p></div>`;
+      `<div class="btn-row"><button class="btn btn-primary" type="button" id="startRound">Start the round ${ICON.arrow}</button><span class="hud-text">${ROUND} questions · about 3 min</span></div>` +
+      `<p class="hud-text">Scoring · Easy 1 pt · Medium 2 pts · Hard 3 pts · Expert 4 pts</p></div>`;
     $$('input[name="cat"]', quizRoot).forEach((r) => r.addEventListener("change", () => { state.cat = r.value; }));
     $("#startRound").addEventListener("click", startRound);
   }
 
   function buildRound(qs, cat) {
-    let picked;
-    if (cat === "mix") {
-      const plan = { ux: [2, 3, 2], ui: [2, 3, 2], ai: [2, 2, 2] };
-      picked = [];
-      Object.keys(plan).forEach((c) => [1, 2, 3].forEach((d) => {
-        picked = picked.concat(shuffle(qs.filter((q) => q.cat === c && q.d === d)).slice(0, plan[c][d - 1]));
-      }));
-    } else {
-      picked = shuffle(qs.filter((q) => q.cat === cat)).slice(0, ROUND);
-    }
-    return [1, 2, 3].reduce((acc, d) => acc.concat(shuffle(picked.filter((q) => q.d === d))), []);
+    // 3 questions per level, in level order. Mixed: one UX, one UI and one AI term per level.
+    return TIERS.reduce((acc, d) => {
+      const tier = cat === "mix"
+        ? ["ux", "ui", "ai"].map((c) => shuffle(qs.filter((q) => q.cat === c && q.d === d))[0]).filter(Boolean)
+        : shuffle(qs.filter((q) => q.cat === cat && q.d === d)).slice(0, PER_TIER);
+      return acc.concat(shuffle(tier));
+    }, []);
   }
 
   function startRound() {
@@ -197,7 +195,7 @@
     renderQuestion();
   }
 
-  const ROUND_NAMES = { 1: "Round 1 · Warm-up", 2: "Round 2 · The terms get trickier", 3: "Round 3 · Specialist territory" };
+  const ROUND_NAMES = { 1: "Round 1 · Warm-up", 2: "Round 2 · The terms get trickier", 3: "Round 3 · Specialist territory", 4: "Round 4 · Expert territory" };
   function renderQuestion() {
     const q = state.list[state.idx], n = state.list.length;
     setHud();
@@ -266,11 +264,11 @@
         ? "No gaps this round. Try a single-category round for harder terms."
         : `${CATS[worst]} terms are your gap: ${joinList(s[worst].missed.slice(0, 3).map((q) => termInSentence(q.term)))} tripped you up. Three short reads below will help.`;
     } else {
-      const s = statsBy((q) => q.d, [1, 2, 3]);
+      const s = statsBy((q) => q.d, TIERS);
       focusCat = state.cat;
       barsTitle = "Score by difficulty";
-      bars = [1, 2, 3].map((d) => ({ label: DIFF[d], p: s[d].total ? s[d].right / s[d].total : 0, val: s[d].right + "/" + s[d].total }));
-      const strong = [3, 2, 1].find((d) => s[d].total && s[d].right / s[d].total >= 0.75);
+      bars = TIERS.map((d) => ({ label: DIFF[d], p: s[d].total ? s[d].right / s[d].total : 0, val: s[d].right + "/" + s[d].total }));
+      const strong = [4, 3, 2, 1].find((d) => s[d].total && s[d].right / s[d].total >= 0.75);
       summary = strong ? `You handled ${DIFF[strong].toLowerCase()} ${CATS[state.cat]} terms well (${s[strong].right} of ${s[strong].total}). ` : "This round was tough, and that’s useful to know. ";
       summary += missed.length === 0 ? "Nothing missed. Try the Mixed round next."
         : `${joinList(missed.slice(0, 3).map((q) => termInSentence(q.term)))}${missed.length > 3 ? " and a few others" : ""} tripped you up. Three short reads below will help.`;
@@ -290,7 +288,7 @@
       `<div class="score-big" aria-label="${earned} of ${max} points"><span class="n" aria-hidden="true" id="countUp">0</span><span class="of" aria-hidden="true">/ ${max} pts · ${pct}%</span></div>` +
       meterHTML(pct) +
       `<p class="lead" style="color:var(--text)">${esc(summary)}</p>` +
-      `<p class="small muted">Hard questions count 3 points, medium 2, easy 1. ${L.name} covers ${L.min}–${hi}% of points.</p>` +
+      `<p class="small muted">Expert questions count 4 points, hard 3, medium 2, easy 1. ${L.name} covers ${L.min}–${hi}% of points.</p>` +
       `<p class="honesty">${ICON.info}<span>This is a quick check, not a certification.</span></p></div>` +
       `<section class="prose" style="gap:16px" aria-labelledby="barsT"><h2 class="subhead" id="barsT">${barsTitle}</h2><ul class="bars">${bars.map((b) => `<li><span>${b.label}</span><span class="bar" role="img" aria-label="${b.label}: ${b.val} right"><span data-to="${b.p.toFixed(4)}"></span></span><span class="val">${b.val}</span></li>`).join("")}</ul></section>` +
       `<section class="prose" style="gap:16px" aria-labelledby="nextT"><h2 class="subhead" id="nextT">Next steps: ${CATS[focusCat]} reads for your level</h2><ul class="res-list" style="list-style:none;margin:0;padding:0">${recs.map(resourceRow).join("")}</ul></section>` +

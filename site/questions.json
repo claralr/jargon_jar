@@ -1,842 +1,842 @@
 [
- {
-  "id": 1,
-  "category": "ux",
-  "difficulty": 1,
-  "term": "Persona",
-  "question": "What is a persona?",
-  "correct": "A fictional profile, built from research, that represents a group of users",
-  "distractors": [
-   "A real customer chosen to test every release",
-   "The brand’s personality and tone of voice",
-   "A login profile used during usability tests"
-  ],
-  "explanation": "A persona is a research-based archetype of a user group. It keeps decisions anchored to real needs instead of the team’s own taste."
- },
- {
-  "id": 2,
-  "category": "ux",
-  "difficulty": 1,
-  "term": "Usability testing",
-  "question": "In a usability test, what are you mainly watching?",
-  "correct": "People trying to complete real tasks with the product",
-  "distractors": [
-   "People rating how much they like the visual design",
-   "Analytics dashboards after launch",
-   "Stakeholders reviewing a wireframe"
-  ],
-  "explanation": "Usability testing means watching representative users attempt tasks. You learn where they hesitate or fail, which opinions alone rarely reveal."
- },
- {
-  "id": 3,
-  "category": "ux",
-  "difficulty": 1,
-  "term": "Wireframe",
-  "question": "A wireframe is…",
-  "correct": "A low-fidelity layout showing structure and content placement",
-  "distractors": [
-   "The final, pixel-perfect visual design",
-   "A coded prototype connected to real data",
-   "A diagram of the server architecture"
-  ],
-  "explanation": "A wireframe shows what goes where, without visual polish. It lets the team agree on structure before anyone argues about colors."
- },
- {
-  "id": 4,
-  "category": "ux",
-  "difficulty": 1,
-  "term": "Journey map",
-  "question": "What does a journey map show?",
-  "correct": "The steps, actions and feelings of a user pursuing a goal over time",
-  "distractors": [
-   "The navigation tree of a website",
-   "The order in which developers build features",
-   "Where users click most on a page"
-  ],
-  "explanation": "A journey map follows one user goal across steps and touchpoints, including emotions and pain points. It shows where the experience breaks between channels."
- },
- {
-  "id": 5,
-  "category": "ux",
-  "difficulty": 1,
-  "term": "Information architecture",
-  "question": "Information architecture is about…",
-  "correct": "Organizing, structuring and labeling content so people can find it",
-  "distractors": [
-   "Choosing fonts and colors for a site",
-   "Designing the database schema",
-   "Writing the copy for each page"
-  ],
-  "explanation": "Information architecture (IA) decides how content is grouped and named. Good IA means people find things where they expect them."
- },
- {
-  "id": 6,
-  "category": "ux",
-  "difficulty": 1,
-  "term": "Pain point",
-  "question": "A pain point is…",
-  "correct": "A specific problem or frustration users experience",
-  "distractors": [
-   "The page with the highest bounce rate",
-   "A feature the team finds hard to build",
-   "The price at which customers stop buying"
-  ],
-  "explanation": "A pain point is a problem users actually feel, like a confusing checkout step. Research surfaces them; design tries to remove them."
- },
- {
-  "id": 7,
-  "category": "ux",
-  "difficulty": 1,
-  "term": "Dark pattern",
-  "question": "A design that tricks people into actions they didn’t intend is called…",
-  "correct": "A dark pattern",
-  "distractors": [
-   "An anti-pattern",
-   "An edge case",
-   "A friction point"
-  ],
-  "explanation": "Dark patterns, now often called deceptive patterns, exploit attention or habit, like a pre-ticked paid add-on. They can lift short-term numbers and cost long-term trust."
- },
- {
-  "id": 8,
-  "category": "ux",
-  "difficulty": 2,
-  "term": "Card sorting",
-  "question": "What is card sorting used for?",
-  "correct": "Learning how users group and label content, to shape navigation",
-  "distractors": [
-   "Prioritizing the product backlog",
-   "Testing which visual design users prefer",
-   "Ranking features by revenue"
-  ],
-  "explanation": "In card sorting, participants group topics into categories that make sense to them. The results guide your information architecture and labels."
- },
- {
-  "id": 9,
-  "category": "ux",
-  "difficulty": 2,
-  "term": "Tree testing",
-  "question": "Tree testing evaluates…",
-  "correct": "Whether people can find items in a text-only version of your navigation",
-  "distractors": [
-   "How fast the page tree renders in the browser",
-   "The visual hierarchy of a landing page",
-   "Which onboarding flow converts better"
-  ],
-  "explanation": "Tree testing strips away visual design and asks people to find things in your menu structure. It separates navigation problems from layout problems."
- },
- {
-  "id": 10,
-  "category": "ux",
-  "difficulty": 2,
-  "term": "Mental model",
-  "question": "A user’s mental model is…",
-  "correct": "What they believe about how a system works",
-  "distractors": [
-   "A 3D model used in product visualization",
-   "A diagram of the user’s emotions",
-   "The model an AI uses to predict behavior"
-  ],
-  "explanation": "A mental model is a user’s own explanation of how something works. When the design matches it, the product feels intuitive."
- },
- {
-  "id": 11,
-  "category": "ux",
-  "difficulty": 2,
-  "term": "Affinity diagram",
-  "question": "After interviews, you cluster sticky notes by theme. What is this called?",
-  "correct": "Affinity diagramming",
-  "distractors": [
-   "A/B testing",
-   "Card sorting",
-   "Heuristic evaluation"
-  ],
-  "explanation": "Affinity diagramming groups research observations into themes. It turns a pile of notes into patterns you can act on."
- },
- {
-  "id": 12,
-  "category": "ux",
-  "difficulty": 2,
-  "term": "Heuristic evaluation",
-  "question": "In a heuristic evaluation, who reviews the interface?",
-  "correct": "Experts, checking it against established usability principles",
-  "distractors": [
-   "Real users, completing tasks",
-   "An algorithm scanning for accessibility errors",
-   "Stakeholders voting on their favorite version"
-  ],
-  "explanation": "A heuristic evaluation is an expert review against principles such as Nielsen’s 10 usability heuristics. It is fast and cheap, but it does not replace testing with users."
- },
- {
-  "id": 13,
-  "category": "ux",
-  "difficulty": 2,
-  "term": "Jobs to Be Done",
-  "question": "The Jobs to Be Done framework focuses on…",
-  "correct": "The progress a person is trying to make in a given situation",
-  "distractors": [
-   "The tasks assigned to each team member",
-   "The list of features in a release",
-   "The job titles of target users"
-  ],
-  "explanation": "Jobs to Be Done frames needs as progress people want to make, not as demographics. People ‘hire’ a product to get a job done."
- },
- {
-  "id": 14,
-  "category": "ux",
-  "difficulty": 2,
-  "term": "Qualitative research",
-  "question": "Which of these is qualitative research?",
-  "correct": "Five in-depth user interviews",
-  "distractors": [
-   "A survey with 2,000 responses on a 1–5 scale",
-   "Conversion rates from analytics",
-   "An A/B test on button color"
-  ],
-  "explanation": "Qualitative research explains why people do things, usually with small samples. Quantitative research measures how many or how much."
- },
- {
-  "id": 15,
-  "category": "ux",
-  "difficulty": 2,
-  "term": "Double Diamond",
-  "question": "The Double Diamond describes…",
-  "correct": "Diverging then converging twice: first on the problem, then on the solution",
-  "distractors": [
-   "Two rounds of usability testing before launch",
-   "The balance between business and user goals",
-   "A grid system with two columns"
-  ],
-  "explanation": "The Double Diamond, from the UK Design Council, has four phases: Discover, Define, Develop, Deliver. You explore widely, then narrow down, for the problem and then for the solution."
- },
- {
-  "id": 16,
-  "category": "ux",
-  "difficulty": 3,
-  "term": "Jakob’s Law",
-  "question": "Jakob’s Law says that…",
-  "correct": "Users spend most of their time on other sites, so they expect yours to work the same way",
-  "distractors": [
-   "Work expands to fill the time available",
-   "The time to reach a target depends on its distance and size",
-   "People can hold about seven items in working memory"
-  ],
-  "explanation": "Jakob’s Law is why familiar patterns win. Users bring expectations from every other product they use."
- },
- {
-  "id": 17,
-  "category": "ux",
-  "difficulty": 3,
-  "term": "Fitts’s Law",
-  "question": "Fitts’s Law predicts that…",
-  "correct": "Bigger, closer targets are faster to hit",
-  "distractors": [
-   "More choices make decisions take longer",
-   "People remember the first and last items in a list best",
-   "Attractive designs are perceived as easier to use"
-  ],
-  "explanation": "Fitts’s Law links pointing time to a target’s distance and size. It is why primary buttons are large and placed near where attention already is."
- },
- {
-  "id": 18,
-  "category": "ux",
-  "difficulty": 3,
-  "term": "Hick’s Law",
-  "question": "Hick’s Law is about…",
-  "correct": "Decision time growing with the number and complexity of choices",
-  "distractors": [
-   "People preferring attractive designs",
-   "Grouping related elements together",
-   "The cost of switching between tasks"
-  ],
-  "explanation": "Hick’s Law: more options mean slower decisions. Trim or group choices when speed matters."
- },
- {
-  "id": 19,
-  "category": "ux",
-  "difficulty": 3,
-  "term": "Diary study",
-  "question": "When is a diary study the right method?",
-  "correct": "To understand behavior and experiences over days or weeks, in real context",
-  "distractors": [
-   "To quickly test one screen with five users",
-   "To measure click-through rates at scale",
-   "To review an interface against heuristics"
-  ],
-  "explanation": "In a diary study, participants log their experiences over time. It captures habits and context that a one-hour session misses."
- },
- {
-  "id": 20,
-  "category": "ux",
-  "difficulty": 3,
-  "term": "The Kano model",
-  "question": "In the Kano model, a ‘must-be’ (basic) feature…",
-  "correct": "Causes dissatisfaction when missing, but little delight when present",
-  "distractors": [
-   "Delights users even though they didn’t expect it",
-   "Raises satisfaction in proportion to how well it performs",
-   "Is ignored by most users"
-  ],
-  "explanation": "The Kano model sorts features by how they affect satisfaction. Basics are expected: you only get noticed when they are missing."
- },
- {
-  "id": 21,
-  "category": "ui",
-  "difficulty": 1,
-  "term": "Visual hierarchy",
-  "question": "Visual hierarchy is…",
-  "correct": "Arranging elements so their importance is clear at a glance",
-  "distractors": [
-   "The order of layers in a design file",
-   "The folder structure of a design system",
-   "The org chart of the design team"
-  ],
-  "explanation": "Visual hierarchy uses size, contrast, color and position to signal what matters first. Without it, everything competes for attention."
- },
- {
-  "id": 22,
-  "category": "ui",
-  "difficulty": 1,
-  "term": "White space",
-  "question": "White space, or negative space, is…",
-  "correct": "Empty space between and around elements",
-  "distractors": [
-   "Any area with a white background",
-   "Space reserved for ads",
-   "Pixels outside the visible screen"
-  ],
-  "explanation": "White space is any empty space, whatever its color. It groups related items, separates unrelated ones and gives content room to breathe."
- },
- {
-  "id": 23,
-  "category": "ui",
-  "difficulty": 1,
-  "term": "Modal",
-  "question": "A modal is…",
-  "correct": "A dialog that blocks the page until you respond or close it",
-  "distractors": [
-   "A menu that slides in from the side",
-   "A short message that disappears on its own",
-   "A tooltip that appears on hover"
-  ],
-  "explanation": "A modal takes over focus and blocks the content behind it. Save it for decisions that need an answer now."
- },
- {
-  "id": 24,
-  "category": "ui",
-  "difficulty": 1,
-  "term": "Toast",
-  "question": "A short message that appears briefly, then disappears on its own, is a…",
-  "correct": "Toast",
-  "distractors": [
-   "Modal",
-   "Popover",
-   "Banner"
-  ],
-  "explanation": "A toast, also called a snackbar, confirms an action without interrupting. Never put anything essential in one: it disappears."
- },
- {
-  "id": 25,
-  "category": "ui",
-  "difficulty": 1,
-  "term": "Responsive design",
-  "question": "Responsive design means…",
-  "correct": "A layout that adapts to different screen sizes",
-  "distractors": [
-   "A design that loads quickly",
-   "An interface that reacts to clicks with animation",
-   "A design approved quickly by stakeholders"
-  ],
-  "explanation": "A responsive layout reflows its content for phones, tablets and desktops from one codebase, usually with flexible grids and breakpoints."
- },
- {
-  "id": 26,
-  "category": "ui",
-  "difficulty": 1,
-  "term": "Breadcrumbs",
-  "question": "Breadcrumbs show…",
-  "correct": "Where the current page sits in the site’s hierarchy",
-  "distractors": [
-   "Your browsing history",
-   "The steps left in a checkout",
-   "Related articles"
-  ],
-  "explanation": "Breadcrumbs, like Home › Shoes › Running, show your location in the hierarchy and let you jump up a level."
- },
- {
-  "id": 27,
-  "category": "ui",
-  "difficulty": 2,
-  "term": "Affordance",
-  "question": "An affordance is…",
-  "correct": "A property that suggests how something can be used",
-  "distractors": [
-   "The cost of building a component",
-   "A grid column that holds content",
-   "A hover animation"
-  ],
-  "explanation": "An affordance hints at an action: a raised button looks pressable. In UI, designers add signifiers so those affordances are visible."
- },
- {
-  "id": 28,
-  "category": "ui",
-  "difficulty": 2,
-  "term": "Design tokens",
-  "question": "Design tokens are…",
-  "correct": "Named values for design decisions like color, spacing and type, shared by design and code",
-  "distractors": [
-   "Credits that unlock premium features in a design tool",
-   "Placeholder images in a mockup",
-   "Access keys for a design system’s repository"
-  ],
-  "explanation": "A design token stores a decision, like accent = #CC3319, under a name. Change the token once and every product that uses it updates."
- },
- {
-  "id": 29,
-  "category": "ui",
-  "difficulty": 2,
-  "term": "Atomic design",
-  "question": "In atomic design, a search form made of a label, an input and a button is…",
-  "correct": "A molecule",
-  "distractors": [
-   "An atom",
-   "An organism",
-   "A template"
-  ],
-  "explanation": "Brad Frost’s atomic design builds up from atoms (a button) to molecules (a search form) to organisms (a header). Each level combines the one below."
- },
- {
-  "id": 30,
-  "category": "ui",
-  "difficulty": 2,
-  "term": "Gestalt proximity",
-  "question": "Elements placed close together are seen as a group. Which Gestalt principle is this?",
-  "correct": "Proximity",
-  "distractors": [
-   "Similarity",
-   "Closure",
-   "Continuity"
-  ],
-  "explanation": "The proximity principle says nearness implies relationship. Spacing alone can group a label with its field, with no borders needed."
- },
- {
-  "id": 31,
-  "category": "ui",
-  "difficulty": 2,
-  "term": "Empty state",
-  "question": "An empty state is…",
-  "correct": "What a screen shows when there is no content yet",
-  "distractors": [
-   "A page that failed to load",
-   "A blank artboard in a design tool",
-   "A component with no variants"
-  ],
-  "explanation": "Empty states appear before any data exists, like a new inbox. A good one explains what will appear and how to add the first item."
- },
- {
-  "id": 32,
-  "category": "ui",
-  "difficulty": 2,
-  "term": "Skeleton screen",
-  "question": "A skeleton screen is…",
-  "correct": "A placeholder layout shown while content loads",
-  "distractors": [
-   "The wireframe version of a page",
-   "A screen with only the navigation",
-   "A low-contrast dark mode"
-  ],
-  "explanation": "A skeleton screen shows grey shapes where content will land. Loading feels faster because people can see the structure coming."
- },
- {
-  "id": 33,
-  "category": "ui",
-  "difficulty": 2,
-  "term": "8-point grid",
-  "question": "Using an 8-point grid means…",
-  "correct": "Sizing and spacing elements in multiples of 8",
-  "distractors": [
-   "Limiting the layout to 8 columns",
-   "Setting body text at 8pt",
-   "Using 8 colors at most"
-  ],
-  "explanation": "An 8pt grid keeps spacing consistent and scales cleanly across screen densities. Many systems use 4 as a base for finer steps."
- },
- {
-  "id": 34,
-  "category": "ui",
-  "difficulty": 2,
-  "term": "Progressive disclosure",
-  "question": "Progressive disclosure means…",
-  "correct": "Showing only what’s needed now and revealing advanced options on demand",
-  "distractors": [
-   "Loading images gradually as you scroll",
-   "Releasing features to users in stages",
-   "Revealing the price only at checkout"
-  ],
-  "explanation": "Progressive disclosure keeps the first view simple and puts advanced options one step away. Beginners stay calm; experts still get power."
- },
- {
-  "id": 35,
-  "category": "ui",
-  "difficulty": 3,
-  "term": "WCAG contrast",
-  "question": "What is the minimum WCAG AA contrast ratio for normal-size body text?",
-  "correct": "4.5:1",
-  "distractors": [
-   "3:1",
-   "7:1",
-   "2:1"
-  ],
-  "explanation": "WCAG AA asks for 4.5:1 for normal text, and 3:1 for large text and UI components. AAA raises body text to 7:1."
- },
- {
-  "id": 36,
-  "category": "ui",
-  "difficulty": 3,
-  "term": "Kerning",
-  "question": "Kerning adjusts…",
-  "correct": "The space between a specific pair of letters",
-  "distractors": [
-   "The space between all letters in a block of text",
-   "The space between lines",
-   "The height of lowercase letters"
-  ],
-  "explanation": "Kerning fixes individual pairs, like ‘AV’. Tracking, or letter-spacing, changes spacing evenly across a whole word or line."
- },
- {
-  "id": 37,
-  "category": "ui",
-  "difficulty": 3,
-  "term": "x-height",
-  "question": "The x-height of a typeface is…",
-  "correct": "The height of lowercase letters, not counting ascenders and descenders",
-  "distractors": [
-   "The width of the letter x",
-   "The distance between baselines",
-   "The height of capital letters"
-  ],
-  "explanation": "x-height is measured on letters like x, a and o. A larger x-height usually reads better at small sizes on screen."
- },
- {
-  "id": 38,
-  "category": "ui",
-  "difficulty": 3,
-  "term": "Focus indicator",
-  "question": "Why must interactive elements have a visible focus state?",
-  "correct": "So keyboard users can see where they are on the page",
-  "distractors": [
-   "So screen readers can announce the element",
-   "So search engines can index links",
-   "So hover effects have a fallback on mobile"
-  ],
-  "explanation": "Keyboard users rely on the focus indicator to know which element will respond. Removing outlines without a replacement makes a site unusable for them."
- },
- {
-  "id": 39,
-  "category": "ui",
-  "difficulty": 3,
-  "term": "Optical alignment",
-  "question": "Nudging a play icon slightly right of its mathematical center so it looks centered is…",
-  "correct": "Optical alignment",
-  "distractors": [
-   "Pixel snapping",
-   "Baseline alignment",
-   "Kerning"
-  ],
-  "explanation": "Shapes like triangles carry their visual weight unevenly. Optical alignment adjusts for how things look, not for their bounding box."
- },
- {
-  "id": 40,
-  "category": "ui",
-  "difficulty": 3,
-  "term": "Target size",
-  "question": "What minimum target size does WCAG 2.2 AA set for pointer targets, with some exceptions?",
-  "correct": "24 by 24 CSS pixels",
-  "distractors": [
-   "44 by 44 CSS pixels",
-   "16 by 16 CSS pixels",
-   "48 by 48 CSS pixels"
-  ],
-  "explanation": "WCAG 2.2 criterion 2.5.8 sets 24×24 CSS pixels at AA, with exceptions such as enough spacing around small targets. 44×44 is the stricter AAA level."
- },
- {
-  "id": 41,
-  "category": "ai",
-  "difficulty": 1,
-  "term": "Large language model (LLM)",
-  "question": "What does LLM stand for?",
-  "correct": "Large language model",
-  "distractors": [
-   "Linked learning machine",
-   "Logical language module",
-   "Layered latent model"
-  ],
-  "explanation": "A large language model is trained on huge amounts of text to predict what comes next. Chat assistants such as Claude and ChatGPT are built on LLMs."
- },
- {
-  "id": 42,
-  "category": "ai",
-  "difficulty": 1,
-  "term": "Prompt",
-  "question": "A prompt is…",
-  "correct": "The input you give a model to get a response",
-  "distractors": [
-   "The model’s confidence score",
-   "A notification the AI sends you",
-   "The model’s training dataset"
-  ],
-  "explanation": "A prompt is everything you send the model: your question, instructions, examples and any attached content. Clearer prompts get more useful answers."
- },
- {
-  "id": 43,
-  "category": "ai",
-  "difficulty": 1,
-  "term": "Hallucination",
-  "question": "In AI, a hallucination is…",
-  "correct": "When a model states something false or made up, with confidence",
-  "distractors": [
-   "When a model refuses to answer",
-   "A visual glitch that only affects generated images",
-   "When the model runs out of memory"
-  ],
-  "explanation": "A hallucination is fluent output that isn’t true, like a citation that doesn’t exist. Design for it: show sources and make checking easy."
- },
- {
-  "id": 44,
-  "category": "ai",
-  "difficulty": 1,
-  "term": "Generative AI",
-  "question": "Generative AI is…",
-  "correct": "AI that creates new content such as text, images or code",
-  "distractors": [
-   "AI that only sorts data into categories",
-   "AI that reduces energy use",
-   "Any software that uses if-then rules"
-  ],
-  "explanation": "Generative AI produces new content based on patterns learned from data. Classifiers, by contrast, only label or sort existing items."
- },
- {
-  "id": 45,
-  "category": "ai",
-  "difficulty": 1,
-  "term": "Training data",
-  "question": "Training data is…",
-  "correct": "The examples a model learns its patterns from",
-  "distractors": [
-   "The settings a user picks in an app",
-   "Logs of the model’s errors",
-   "Benchmarks published after launch"
-  ],
-  "explanation": "A model’s behavior reflects its training data. Gaps or bias in that data show up in the answers."
- },
- {
-  "id": 46,
-  "category": "ai",
-  "difficulty": 1,
-  "term": "Machine learning",
-  "question": "Machine learning is…",
-  "correct": "Systems that learn patterns from data instead of following hand-written rules",
-  "distractors": [
-   "Robots that build other machines",
-   "Learning to use machinery through tutorials",
-   "Any software that has a database"
-  ],
-  "explanation": "In machine learning, you give a system examples and it learns the rules itself. LLMs are one kind of machine learning model."
- },
- {
-  "id": 47,
-  "category": "ai",
-  "difficulty": 2,
-  "term": "Token",
-  "question": "In language models, a token is…",
-  "correct": "A chunk of text, often part of a word, that the model processes",
-  "distractors": [
-   "A login credential for the AI service",
-   "A single full sentence",
-   "A reward the model earns for right answers"
-  ],
-  "explanation": "Models read and write in tokens, which are often pieces of words. Pricing, speed and limits are all counted in tokens."
- },
- {
-  "id": 48,
-  "category": "ai",
-  "difficulty": 2,
-  "term": "Context window",
-  "question": "A model’s context window is…",
-  "correct": "The maximum amount of text it can consider at once",
-  "distractors": [
-   "The chat panel on the screen",
-   "How long it remembers you between sessions",
-   "The range of topics it was trained on"
-  ],
-  "explanation": "The context window caps how many tokens fit in one request, prompt and response included. Past that, earlier content has to be cut or summarized."
- },
- {
-  "id": 49,
-  "category": "ai",
-  "difficulty": 2,
-  "term": "Multimodal",
-  "question": "A multimodal model can…",
-  "correct": "Work with more than one type of input or output, like text and images",
-  "distractors": [
-   "Run on several devices at once",
-   "Translate between many languages",
-   "Answer in several tones of voice"
-  ],
-  "explanation": "Multimodal models handle several kinds of data, such as reading a screenshot and answering in text. That opens up new interface patterns."
- },
- {
-  "id": 50,
-  "category": "ai",
-  "difficulty": 2,
-  "term": "System prompt",
-  "question": "A system prompt is…",
-  "correct": "Instructions set by the product that shape the model’s behavior across a conversation",
-  "distractors": [
-   "The error message shown when the model fails",
-   "The operating system the model runs on",
-   "The first message a user types"
-  ],
-  "explanation": "The system prompt sets role, rules and tone before the user says anything. It is a big part of how an AI feature feels."
- },
- {
-  "id": 51,
-  "category": "ai",
-  "difficulty": 2,
-  "term": "Temperature",
-  "question": "Raising a model’s temperature setting usually makes its output…",
-  "correct": "More varied and less predictable",
-  "distractors": [
-   "Shorter",
-   "More factual",
-   "Faster"
-  ],
-  "explanation": "Temperature controls randomness when the model picks the next token. Low is focused and repeatable; high is more varied, and more likely to drift."
- },
- {
-  "id": 52,
-  "category": "ai",
-  "difficulty": 2,
-  "term": "Fine-tuning",
-  "question": "Fine-tuning is…",
-  "correct": "Further training a pre-trained model on a narrower dataset",
-  "distractors": [
-   "Adjusting the font sizes of an AI chat interface",
-   "Rewriting a prompt until it works",
-   "Lowering the temperature"
-  ],
-  "explanation": "Fine-tuning adapts a general model to a specific task or style with extra training. Often, better prompts or retrieval get you there more cheaply."
- },
- {
-  "id": 53,
-  "category": "ai",
-  "difficulty": 2,
-  "term": "Retrieval-augmented generation (RAG)",
-  "question": "Retrieval-augmented generation (RAG) means…",
-  "correct": "Fetching relevant documents and giving them to the model as context before it answers",
-  "distractors": [
-   "Retraining the model every night",
-   "Generating images from retrieved photos",
-   "Letting users rate answers"
-  ],
-  "explanation": "With RAG, the system searches a knowledge source and adds the results to the prompt. Answers can use fresher or private information without retraining."
- },
- {
-  "id": 54,
-  "category": "ai",
-  "difficulty": 2,
-  "term": "Human in the loop",
-  "question": "‘Human in the loop’ means…",
-  "correct": "A person reviews or approves the AI’s output at key steps",
-  "distractors": [
-   "Any user chatting with an AI",
-   "Humans labeling all training data by hand",
-   "A support team that steps in when the AI is offline"
-  ],
-  "explanation": "Human in the loop keeps a person in charge of important decisions. Design the review step so it is quick and the stakes are clear."
- },
- {
-  "id": 55,
-  "category": "ai",
-  "difficulty": 3,
-  "term": "Embedding",
-  "question": "An embedding is…",
-  "correct": "A list of numbers that represents meaning, so similar items sit close together",
-  "distractors": [
-   "An AI model placed inside a web page",
-   "A watermark hidden in generated images",
-   "A compressed copy of the training data"
-  ],
-  "explanation": "Embeddings turn text or images into vectors. Search, recommendations and RAG use them to find items with similar meaning."
- },
- {
-  "id": 56,
-  "category": "ai",
-  "difficulty": 3,
-  "term": "AI agent",
-  "question": "An AI agent differs from a basic chatbot because it…",
-  "correct": "Plans and takes actions with tools over several steps toward a goal",
-  "distractors": [
-   "Has a human name and an avatar",
-   "Runs on a larger server",
-   "Only answers questions about one product"
-  ],
-  "explanation": "An agent can call tools, read results and decide its next step. That autonomy needs clear limits, visible progress and easy ways to stop it."
- },
- {
-  "id": 57,
-  "category": "ai",
-  "difficulty": 3,
-  "term": "Grounding",
-  "question": "Grounding a model’s answer means…",
-  "correct": "Tying it to verifiable sources or data you provided",
-  "distractors": [
-   "Lowering its temperature to zero",
-   "Restricting it to short answers",
-   "Training it on physical-world sensor data"
-  ],
-  "explanation": "A grounded answer is based on specific, checkable material, often with citations. It is one of the main defenses against hallucination."
- },
- {
-  "id": 58,
-  "category": "ai",
-  "difficulty": 3,
-  "term": "Prompt injection",
-  "question": "Prompt injection is…",
-  "correct": "Hidden or malicious instructions in content that try to hijack a model’s behavior",
-  "distractors": [
-   "Adding examples to a prompt to improve answers",
-   "Sending many prompts at once to go faster",
-   "Pasting a prompt into a design file"
-  ],
-  "explanation": "Prompt injection hides instructions in a web page, email or file the model reads. AI features need confirmation steps before risky actions."
- },
- {
-  "id": 59,
-  "category": "ai",
-  "difficulty": 3,
-  "term": "Few-shot prompting",
-  "question": "Few-shot prompting means…",
-  "correct": "Including a few examples of the input and output you want in the prompt",
-  "distractors": [
-   "Limiting the model to a few words",
-   "Asking the same question a few times and averaging",
-   "Training a model from scratch on very little data"
-  ],
-  "explanation": "Few-shot prompting shows the model what good looks like. Zero-shot gives no examples, only instructions."
- },
- {
-  "id": 60,
-  "category": "ai",
-  "difficulty": 3,
-  "term": "Evals",
-  "question": "In AI product work, ‘evals’ are…",
-  "correct": "Structured tests that measure how well a model or prompt performs on defined tasks",
-  "distractors": [
-   "Annual performance reviews for AI teams",
-   "User satisfaction surveys",
-   "The model’s training logs"
-  ],
-  "explanation": "Evals are test sets with clear pass criteria. They show whether a prompt or model change made things better or worse before users find out."
- }
+  {
+    "id": 1,
+    "category": "ux",
+    "difficulty": 1,
+    "term": "Persona",
+    "question": "What is a persona?",
+    "correct": "A fictional profile, built from research, that represents a group of users",
+    "distractors": [
+      "A real customer chosen to test every release",
+      "The brand’s personality and tone of voice",
+      "A login profile used during usability tests"
+    ],
+    "explanation": "A persona is a research-based archetype of a user group. It keeps decisions anchored to real needs instead of the team’s own taste."
+  },
+  {
+    "id": 2,
+    "category": "ux",
+    "difficulty": 1,
+    "term": "Usability testing",
+    "question": "In a usability test, what are you mainly watching?",
+    "correct": "People trying to complete real tasks with the product",
+    "distractors": [
+      "People rating how much they like the visual design",
+      "Analytics dashboards after launch",
+      "Stakeholders reviewing a wireframe"
+    ],
+    "explanation": "Usability testing means watching representative users attempt tasks. You learn where they hesitate or fail, which opinions alone rarely reveal."
+  },
+  {
+    "id": 3,
+    "category": "ux",
+    "difficulty": 1,
+    "term": "Wireframe",
+    "question": "A wireframe is…",
+    "correct": "A low-fidelity layout showing structure and content placement",
+    "distractors": [
+      "The final, pixel-perfect visual design",
+      "A coded prototype connected to real data",
+      "A diagram of the server architecture"
+    ],
+    "explanation": "A wireframe shows what goes where, without visual polish. It lets the team agree on structure before anyone argues about colors."
+  },
+  {
+    "id": 4,
+    "category": "ux",
+    "difficulty": 1,
+    "term": "Journey map",
+    "question": "What does a journey map show?",
+    "correct": "The steps, actions and feelings of a user pursuing a goal over time",
+    "distractors": [
+      "The navigation tree of a website",
+      "The order in which developers build features",
+      "Where users click most on a page"
+    ],
+    "explanation": "A journey map follows one user goal across steps and touchpoints, including emotions and pain points. It shows where the experience breaks between channels."
+  },
+  {
+    "id": 5,
+    "category": "ux",
+    "difficulty": 1,
+    "term": "Information architecture",
+    "question": "Information architecture is about…",
+    "correct": "Organizing, structuring and labeling content so people can find it",
+    "distractors": [
+      "Choosing fonts and colors for a site",
+      "Designing the database schema",
+      "Writing the copy for each page"
+    ],
+    "explanation": "Information architecture (IA) decides how content is grouped and named. Good IA means people find things where they expect them."
+  },
+  {
+    "id": 6,
+    "category": "ux",
+    "difficulty": 1,
+    "term": "Pain point",
+    "question": "A pain point is…",
+    "correct": "A specific problem or frustration users experience",
+    "distractors": [
+      "The page with the highest bounce rate",
+      "A feature the team finds hard to build",
+      "The price at which customers stop buying"
+    ],
+    "explanation": "A pain point is a problem users actually feel, like a confusing checkout step. Research surfaces them; design tries to remove them."
+  },
+  {
+    "id": 7,
+    "category": "ux",
+    "difficulty": 1,
+    "term": "Dark pattern",
+    "question": "A design that tricks people into actions they didn’t intend is called…",
+    "correct": "A dark pattern",
+    "distractors": [
+      "An anti-pattern",
+      "An edge case",
+      "A friction point"
+    ],
+    "explanation": "Dark patterns, now often called deceptive patterns, exploit attention or habit, like a pre-ticked paid add-on. They can lift short-term numbers and cost long-term trust."
+  },
+  {
+    "id": 8,
+    "category": "ux",
+    "difficulty": 2,
+    "term": "Card sorting",
+    "question": "What is card sorting used for?",
+    "correct": "Learning how users group and label content, to shape navigation",
+    "distractors": [
+      "Prioritizing the product backlog",
+      "Testing which visual design users prefer",
+      "Ranking features by revenue"
+    ],
+    "explanation": "In card sorting, participants group topics into categories that make sense to them. The results guide your information architecture and labels."
+  },
+  {
+    "id": 9,
+    "category": "ux",
+    "difficulty": 2,
+    "term": "Tree testing",
+    "question": "Tree testing evaluates…",
+    "correct": "Whether people can find items in a text-only version of your navigation",
+    "distractors": [
+      "How fast the page tree renders in the browser",
+      "The visual hierarchy of a landing page",
+      "Which onboarding flow converts better"
+    ],
+    "explanation": "Tree testing strips away visual design and asks people to find things in your menu structure. It separates navigation problems from layout problems."
+  },
+  {
+    "id": 10,
+    "category": "ux",
+    "difficulty": 2,
+    "term": "Mental model",
+    "question": "A user’s mental model is…",
+    "correct": "What they believe about how a system works",
+    "distractors": [
+      "A 3D model used in product visualization",
+      "A diagram of the user’s emotions",
+      "The model an AI uses to predict behavior"
+    ],
+    "explanation": "A mental model is a user’s own explanation of how something works. When the design matches it, the product feels intuitive."
+  },
+  {
+    "id": 11,
+    "category": "ux",
+    "difficulty": 2,
+    "term": "Affinity diagram",
+    "question": "After interviews, you cluster sticky notes by theme. What is this called?",
+    "correct": "Affinity diagramming",
+    "distractors": [
+      "A/B testing",
+      "Card sorting",
+      "Heuristic evaluation"
+    ],
+    "explanation": "Affinity diagramming groups research observations into themes. It turns a pile of notes into patterns you can act on."
+  },
+  {
+    "id": 12,
+    "category": "ux",
+    "difficulty": 3,
+    "term": "Heuristic evaluation",
+    "question": "In a heuristic evaluation, who reviews the interface?",
+    "correct": "Experts, checking it against established usability principles",
+    "distractors": [
+      "Real users, completing tasks",
+      "An algorithm scanning for accessibility errors",
+      "Stakeholders voting on their favorite version"
+    ],
+    "explanation": "A heuristic evaluation is an expert review against principles such as Nielsen’s 10 usability heuristics. It is fast and cheap, but it does not replace testing with users."
+  },
+  {
+    "id": 13,
+    "category": "ux",
+    "difficulty": 3,
+    "term": "Jobs to Be Done",
+    "question": "The Jobs to Be Done framework focuses on…",
+    "correct": "The progress a person is trying to make in a given situation",
+    "distractors": [
+      "The tasks assigned to each team member",
+      "The list of features in a release",
+      "The job titles of target users"
+    ],
+    "explanation": "Jobs to Be Done frames needs as progress people want to make, not as demographics. People ‘hire’ a product to get a job done."
+  },
+  {
+    "id": 14,
+    "category": "ux",
+    "difficulty": 2,
+    "term": "Qualitative research",
+    "question": "Which of these is qualitative research?",
+    "correct": "Five in-depth user interviews",
+    "distractors": [
+      "A survey with 2,000 responses on a 1–5 scale",
+      "Conversion rates from analytics",
+      "An A/B test on button color"
+    ],
+    "explanation": "Qualitative research explains why people do things, usually with small samples. Quantitative research measures how many or how much."
+  },
+  {
+    "id": 15,
+    "category": "ux",
+    "difficulty": 3,
+    "term": "Double Diamond",
+    "question": "The Double Diamond describes…",
+    "correct": "Diverging then converging twice: first on the problem, then on the solution",
+    "distractors": [
+      "Two rounds of usability testing before launch",
+      "The balance between business and user goals",
+      "A grid system with two columns"
+    ],
+    "explanation": "The Double Diamond, from the UK Design Council, has four phases: Discover, Define, Develop, Deliver. You explore widely, then narrow down, for the problem and then for the solution."
+  },
+  {
+    "id": 16,
+    "category": "ux",
+    "difficulty": 3,
+    "term": "Jakob’s Law",
+    "question": "Jakob’s Law says that…",
+    "correct": "Users spend most of their time on other sites, so they expect yours to work the same way",
+    "distractors": [
+      "Work expands to fill the time available",
+      "The time to reach a target depends on its distance and size",
+      "People can hold about seven items in working memory"
+    ],
+    "explanation": "Jakob’s Law is why familiar patterns win. Users bring expectations from every other product they use."
+  },
+  {
+    "id": 17,
+    "category": "ux",
+    "difficulty": 3,
+    "term": "Fitts’s Law",
+    "question": "Fitts’s Law predicts that…",
+    "correct": "Bigger, closer targets are faster to hit",
+    "distractors": [
+      "More choices make decisions take longer",
+      "People remember the first and last items in a list best",
+      "Attractive designs are perceived as easier to use"
+    ],
+    "explanation": "Fitts’s Law links pointing time to a target’s distance and size. It is why primary buttons are large and placed near where attention already is."
+  },
+  {
+    "id": 18,
+    "category": "ux",
+    "difficulty": 4,
+    "term": "Hick’s Law",
+    "question": "Hick’s Law is about…",
+    "correct": "Decision time growing with the number and complexity of choices",
+    "distractors": [
+      "People preferring attractive designs",
+      "Grouping related elements together",
+      "The cost of switching between tasks"
+    ],
+    "explanation": "Hick’s Law: more options mean slower decisions. Trim or group choices when speed matters."
+  },
+  {
+    "id": 19,
+    "category": "ux",
+    "difficulty": 4,
+    "term": "Diary study",
+    "question": "When is a diary study the right method?",
+    "correct": "To understand behavior and experiences over days or weeks, in real context",
+    "distractors": [
+      "To quickly test one screen with five users",
+      "To measure click-through rates at scale",
+      "To review an interface against heuristics"
+    ],
+    "explanation": "In a diary study, participants log their experiences over time. It captures habits and context that a one-hour session misses."
+  },
+  {
+    "id": 20,
+    "category": "ux",
+    "difficulty": 4,
+    "term": "The Kano model",
+    "question": "In the Kano model, a ‘must-be’ (basic) feature…",
+    "correct": "Causes dissatisfaction when missing, but little delight when present",
+    "distractors": [
+      "Delights users even though they didn’t expect it",
+      "Raises satisfaction in proportion to how well it performs",
+      "Is ignored by most users"
+    ],
+    "explanation": "The Kano model sorts features by how they affect satisfaction. Basics are expected: you only get noticed when they are missing."
+  },
+  {
+    "id": 21,
+    "category": "ui",
+    "difficulty": 1,
+    "term": "Visual hierarchy",
+    "question": "Visual hierarchy is…",
+    "correct": "Arranging elements so their importance is clear at a glance",
+    "distractors": [
+      "The order of layers in a design file",
+      "The folder structure of a design system",
+      "The org chart of the design team"
+    ],
+    "explanation": "Visual hierarchy uses size, contrast, color and position to signal what matters first. Without it, everything competes for attention."
+  },
+  {
+    "id": 22,
+    "category": "ui",
+    "difficulty": 1,
+    "term": "White space",
+    "question": "White space, or negative space, is…",
+    "correct": "Empty space between and around elements",
+    "distractors": [
+      "Any area with a white background",
+      "Space reserved for ads",
+      "Pixels outside the visible screen"
+    ],
+    "explanation": "White space is any empty space, whatever its color. It groups related items, separates unrelated ones and gives content room to breathe."
+  },
+  {
+    "id": 23,
+    "category": "ui",
+    "difficulty": 1,
+    "term": "Modal",
+    "question": "A modal is…",
+    "correct": "A dialog that blocks the page until you respond or close it",
+    "distractors": [
+      "A menu that slides in from the side",
+      "A short message that disappears on its own",
+      "A tooltip that appears on hover"
+    ],
+    "explanation": "A modal takes over focus and blocks the content behind it. Save it for decisions that need an answer now."
+  },
+  {
+    "id": 24,
+    "category": "ui",
+    "difficulty": 1,
+    "term": "Toast",
+    "question": "A short message that appears briefly, then disappears on its own, is a…",
+    "correct": "Toast",
+    "distractors": [
+      "Modal",
+      "Popover",
+      "Banner"
+    ],
+    "explanation": "A toast, also called a snackbar, confirms an action without interrupting. Never put anything essential in one: it disappears."
+  },
+  {
+    "id": 25,
+    "category": "ui",
+    "difficulty": 1,
+    "term": "Responsive design",
+    "question": "Responsive design means…",
+    "correct": "A layout that adapts to different screen sizes",
+    "distractors": [
+      "A design that loads quickly",
+      "An interface that reacts to clicks with animation",
+      "A design approved quickly by stakeholders"
+    ],
+    "explanation": "A responsive layout reflows its content for phones, tablets and desktops from one codebase, usually with flexible grids and breakpoints."
+  },
+  {
+    "id": 26,
+    "category": "ui",
+    "difficulty": 1,
+    "term": "Breadcrumbs",
+    "question": "Breadcrumbs show…",
+    "correct": "Where the current page sits in the site’s hierarchy",
+    "distractors": [
+      "Your browsing history",
+      "The steps left in a checkout",
+      "Related articles"
+    ],
+    "explanation": "Breadcrumbs, like Home › Shoes › Running, show your location in the hierarchy and let you jump up a level."
+  },
+  {
+    "id": 27,
+    "category": "ui",
+    "difficulty": 3,
+    "term": "Affordance",
+    "question": "An affordance is…",
+    "correct": "A property that suggests how something can be used",
+    "distractors": [
+      "The cost of building a component",
+      "A grid column that holds content",
+      "A hover animation"
+    ],
+    "explanation": "An affordance hints at an action: a raised button looks pressable. In UI, designers add signifiers so those affordances are visible."
+  },
+  {
+    "id": 28,
+    "category": "ui",
+    "difficulty": 3,
+    "term": "Design tokens",
+    "question": "Design tokens are…",
+    "correct": "Named values for design decisions like color, spacing and type, shared by design and code",
+    "distractors": [
+      "Credits that unlock premium features in a design tool",
+      "Placeholder images in a mockup",
+      "Access keys for a design system’s repository"
+    ],
+    "explanation": "A design token stores a decision, like accent = #CC3319, under a name. Change the token once and every product that uses it updates."
+  },
+  {
+    "id": 29,
+    "category": "ui",
+    "difficulty": 3,
+    "term": "Atomic design",
+    "question": "In atomic design, a search form made of a label, an input and a button is…",
+    "correct": "A molecule",
+    "distractors": [
+      "An atom",
+      "An organism",
+      "A template"
+    ],
+    "explanation": "Brad Frost’s atomic design builds up from atoms (a button) to molecules (a search form) to organisms (a header). Each level combines the one below."
+  },
+  {
+    "id": 30,
+    "category": "ui",
+    "difficulty": 2,
+    "term": "Gestalt proximity",
+    "question": "Elements placed close together are seen as a group. Which Gestalt principle is this?",
+    "correct": "Proximity",
+    "distractors": [
+      "Similarity",
+      "Closure",
+      "Continuity"
+    ],
+    "explanation": "The proximity principle says nearness implies relationship. Spacing alone can group a label with its field, with no borders needed."
+  },
+  {
+    "id": 31,
+    "category": "ui",
+    "difficulty": 2,
+    "term": "Empty state",
+    "question": "An empty state is…",
+    "correct": "What a screen shows when there is no content yet",
+    "distractors": [
+      "A page that failed to load",
+      "A blank artboard in a design tool",
+      "A component with no variants"
+    ],
+    "explanation": "Empty states appear before any data exists, like a new inbox. A good one explains what will appear and how to add the first item."
+  },
+  {
+    "id": 32,
+    "category": "ui",
+    "difficulty": 2,
+    "term": "Skeleton screen",
+    "question": "A skeleton screen is…",
+    "correct": "A placeholder layout shown while content loads",
+    "distractors": [
+      "The wireframe version of a page",
+      "A screen with only the navigation",
+      "A low-contrast dark mode"
+    ],
+    "explanation": "A skeleton screen shows grey shapes where content will land. Loading feels faster because people can see the structure coming."
+  },
+  {
+    "id": 33,
+    "category": "ui",
+    "difficulty": 3,
+    "term": "8-point grid",
+    "question": "Using an 8-point grid means…",
+    "correct": "Sizing and spacing elements in multiples of 8",
+    "distractors": [
+      "Limiting the layout to 8 columns",
+      "Setting body text at 8pt",
+      "Using 8 colors at most"
+    ],
+    "explanation": "An 8pt grid keeps spacing consistent and scales cleanly across screen densities. Many systems use 4 as a base for finer steps."
+  },
+  {
+    "id": 34,
+    "category": "ui",
+    "difficulty": 2,
+    "term": "Progressive disclosure",
+    "question": "Progressive disclosure means…",
+    "correct": "Showing only what’s needed now and revealing advanced options on demand",
+    "distractors": [
+      "Loading images gradually as you scroll",
+      "Releasing features to users in stages",
+      "Revealing the price only at checkout"
+    ],
+    "explanation": "Progressive disclosure keeps the first view simple and puts advanced options one step away. Beginners stay calm; experts still get power."
+  },
+  {
+    "id": 35,
+    "category": "ui",
+    "difficulty": 4,
+    "term": "WCAG contrast",
+    "question": "What is the minimum WCAG AA contrast ratio for normal-size body text?",
+    "correct": "4.5:1",
+    "distractors": [
+      "3:1",
+      "7:1",
+      "2:1"
+    ],
+    "explanation": "WCAG AA asks for 4.5:1 for normal text, and 3:1 for large text and UI components. AAA raises body text to 7:1."
+  },
+  {
+    "id": 36,
+    "category": "ui",
+    "difficulty": 3,
+    "term": "Kerning",
+    "question": "Kerning adjusts…",
+    "correct": "The space between a specific pair of letters",
+    "distractors": [
+      "The space between all letters in a block of text",
+      "The space between lines",
+      "The height of lowercase letters"
+    ],
+    "explanation": "Kerning fixes individual pairs, like ‘AV’. Tracking, or letter-spacing, changes spacing evenly across a whole word or line."
+  },
+  {
+    "id": 37,
+    "category": "ui",
+    "difficulty": 4,
+    "term": "x-height",
+    "question": "The x-height of a typeface is…",
+    "correct": "The height of lowercase letters, not counting ascenders and descenders",
+    "distractors": [
+      "The width of the letter x",
+      "The distance between baselines",
+      "The height of capital letters"
+    ],
+    "explanation": "x-height is measured on letters like x, a and o. A larger x-height usually reads better at small sizes on screen."
+  },
+  {
+    "id": 38,
+    "category": "ui",
+    "difficulty": 4,
+    "term": "Focus indicator",
+    "question": "Why must interactive elements have a visible focus state?",
+    "correct": "So keyboard users can see where they are on the page",
+    "distractors": [
+      "So screen readers can announce the element",
+      "So search engines can index links",
+      "So hover effects have a fallback on mobile"
+    ],
+    "explanation": "Keyboard users rely on the focus indicator to know which element will respond. Removing outlines without a replacement makes a site unusable for them."
+  },
+  {
+    "id": 39,
+    "category": "ui",
+    "difficulty": 4,
+    "term": "Optical alignment",
+    "question": "Nudging a play icon slightly right of its mathematical center so it looks centered is…",
+    "correct": "Optical alignment",
+    "distractors": [
+      "Pixel snapping",
+      "Baseline alignment",
+      "Kerning"
+    ],
+    "explanation": "Shapes like triangles carry their visual weight unevenly. Optical alignment adjusts for how things look, not for their bounding box."
+  },
+  {
+    "id": 40,
+    "category": "ui",
+    "difficulty": 4,
+    "term": "Target size",
+    "question": "What minimum target size does WCAG 2.2 AA set for pointer targets, with some exceptions?",
+    "correct": "24 by 24 CSS pixels",
+    "distractors": [
+      "44 by 44 CSS pixels",
+      "16 by 16 CSS pixels",
+      "48 by 48 CSS pixels"
+    ],
+    "explanation": "WCAG 2.2 criterion 2.5.8 sets 24×24 CSS pixels at AA, with exceptions such as enough spacing around small targets. 44×44 is the stricter AAA level."
+  },
+  {
+    "id": 41,
+    "category": "ai",
+    "difficulty": 1,
+    "term": "Large language model (LLM)",
+    "question": "What does LLM stand for?",
+    "correct": "Large language model",
+    "distractors": [
+      "Linked learning machine",
+      "Logical language module",
+      "Layered latent model"
+    ],
+    "explanation": "A large language model is trained on huge amounts of text to predict what comes next. Chat assistants such as Claude and ChatGPT are built on LLMs."
+  },
+  {
+    "id": 42,
+    "category": "ai",
+    "difficulty": 1,
+    "term": "Prompt",
+    "question": "A prompt is…",
+    "correct": "The input you give a model to get a response",
+    "distractors": [
+      "The model’s confidence score",
+      "A notification the AI sends you",
+      "The model’s training dataset"
+    ],
+    "explanation": "A prompt is everything you send the model: your question, instructions, examples and any attached content. Clearer prompts get more useful answers."
+  },
+  {
+    "id": 43,
+    "category": "ai",
+    "difficulty": 1,
+    "term": "Hallucination",
+    "question": "In AI, a hallucination is…",
+    "correct": "When a model states something false or made up, with confidence",
+    "distractors": [
+      "When a model refuses to answer",
+      "A visual glitch that only affects generated images",
+      "When the model runs out of memory"
+    ],
+    "explanation": "A hallucination is fluent output that isn’t true, like a citation that doesn’t exist. Design for it: show sources and make checking easy."
+  },
+  {
+    "id": 44,
+    "category": "ai",
+    "difficulty": 1,
+    "term": "Generative AI",
+    "question": "Generative AI is…",
+    "correct": "AI that creates new content such as text, images or code",
+    "distractors": [
+      "AI that only sorts data into categories",
+      "AI that reduces energy use",
+      "Any software that uses if-then rules"
+    ],
+    "explanation": "Generative AI produces new content based on patterns learned from data. Classifiers, by contrast, only label or sort existing items."
+  },
+  {
+    "id": 45,
+    "category": "ai",
+    "difficulty": 1,
+    "term": "Training data",
+    "question": "Training data is…",
+    "correct": "The examples a model learns its patterns from",
+    "distractors": [
+      "The settings a user picks in an app",
+      "Logs of the model’s errors",
+      "Benchmarks published after launch"
+    ],
+    "explanation": "A model’s behavior reflects its training data. Gaps or bias in that data show up in the answers."
+  },
+  {
+    "id": 46,
+    "category": "ai",
+    "difficulty": 1,
+    "term": "Machine learning",
+    "question": "Machine learning is…",
+    "correct": "Systems that learn patterns from data instead of following hand-written rules",
+    "distractors": [
+      "Robots that build other machines",
+      "Learning to use machinery through tutorials",
+      "Any software that has a database"
+    ],
+    "explanation": "In machine learning, you give a system examples and it learns the rules itself. LLMs are one kind of machine learning model."
+  },
+  {
+    "id": 47,
+    "category": "ai",
+    "difficulty": 2,
+    "term": "Token",
+    "question": "In language models, a token is…",
+    "correct": "A chunk of text, often part of a word, that the model processes",
+    "distractors": [
+      "A login credential for the AI service",
+      "A single full sentence",
+      "A reward the model earns for right answers"
+    ],
+    "explanation": "Models read and write in tokens, which are often pieces of words. Pricing, speed and limits are all counted in tokens."
+  },
+  {
+    "id": 48,
+    "category": "ai",
+    "difficulty": 2,
+    "term": "Context window",
+    "question": "A model’s context window is…",
+    "correct": "The maximum amount of text it can consider at once",
+    "distractors": [
+      "The chat panel on the screen",
+      "How long it remembers you between sessions",
+      "The range of topics it was trained on"
+    ],
+    "explanation": "The context window caps how many tokens fit in one request, prompt and response included. Past that, earlier content has to be cut or summarized."
+  },
+  {
+    "id": 49,
+    "category": "ai",
+    "difficulty": 2,
+    "term": "Multimodal",
+    "question": "A multimodal model can…",
+    "correct": "Work with more than one type of input or output, like text and images",
+    "distractors": [
+      "Run on several devices at once",
+      "Translate between many languages",
+      "Answer in several tones of voice"
+    ],
+    "explanation": "Multimodal models handle several kinds of data, such as reading a screenshot and answering in text. That opens up new interface patterns."
+  },
+  {
+    "id": 50,
+    "category": "ai",
+    "difficulty": 2,
+    "term": "System prompt",
+    "question": "A system prompt is…",
+    "correct": "Instructions set by the product that shape the model’s behavior across a conversation",
+    "distractors": [
+      "The error message shown when the model fails",
+      "The operating system the model runs on",
+      "The first message a user types"
+    ],
+    "explanation": "The system prompt sets role, rules and tone before the user says anything. It is a big part of how an AI feature feels."
+  },
+  {
+    "id": 51,
+    "category": "ai",
+    "difficulty": 3,
+    "term": "Temperature",
+    "question": "Raising a model’s temperature setting usually makes its output…",
+    "correct": "More varied and less predictable",
+    "distractors": [
+      "Shorter",
+      "More factual",
+      "Faster"
+    ],
+    "explanation": "Temperature controls randomness when the model picks the next token. Low is focused and repeatable; high is more varied, and more likely to drift."
+  },
+  {
+    "id": 52,
+    "category": "ai",
+    "difficulty": 3,
+    "term": "Fine-tuning",
+    "question": "Fine-tuning is…",
+    "correct": "Further training a pre-trained model on a narrower dataset",
+    "distractors": [
+      "Adjusting the font sizes of an AI chat interface",
+      "Rewriting a prompt until it works",
+      "Lowering the temperature"
+    ],
+    "explanation": "Fine-tuning adapts a general model to a specific task or style with extra training. Often, better prompts or retrieval get you there more cheaply."
+  },
+  {
+    "id": 53,
+    "category": "ai",
+    "difficulty": 3,
+    "term": "Retrieval-augmented generation (RAG)",
+    "question": "Retrieval-augmented generation (RAG) means…",
+    "correct": "Fetching relevant documents and giving them to the model as context before it answers",
+    "distractors": [
+      "Retraining the model every night",
+      "Generating images from retrieved photos",
+      "Letting users rate answers"
+    ],
+    "explanation": "With RAG, the system searches a knowledge source and adds the results to the prompt. Answers can use fresher or private information without retraining."
+  },
+  {
+    "id": 54,
+    "category": "ai",
+    "difficulty": 2,
+    "term": "Human in the loop",
+    "question": "‘Human in the loop’ means…",
+    "correct": "A person reviews or approves the AI’s output at key steps",
+    "distractors": [
+      "Any user chatting with an AI",
+      "Humans labeling all training data by hand",
+      "A support team that steps in when the AI is offline"
+    ],
+    "explanation": "Human in the loop keeps a person in charge of important decisions. Design the review step so it is quick and the stakes are clear."
+  },
+  {
+    "id": 55,
+    "category": "ai",
+    "difficulty": 4,
+    "term": "Embedding",
+    "question": "An embedding is…",
+    "correct": "A list of numbers that represents meaning, so similar items sit close together",
+    "distractors": [
+      "An AI model placed inside a web page",
+      "A watermark hidden in generated images",
+      "A compressed copy of the training data"
+    ],
+    "explanation": "Embeddings turn text or images into vectors. Search, recommendations and RAG use them to find items with similar meaning."
+  },
+  {
+    "id": 56,
+    "category": "ai",
+    "difficulty": 3,
+    "term": "AI agent",
+    "question": "An AI agent differs from a basic chatbot because it…",
+    "correct": "Plans and takes actions with tools over several steps toward a goal",
+    "distractors": [
+      "Has a human name and an avatar",
+      "Runs on a larger server",
+      "Only answers questions about one product"
+    ],
+    "explanation": "An agent can call tools, read results and decide its next step. That autonomy needs clear limits, visible progress and easy ways to stop it."
+  },
+  {
+    "id": 57,
+    "category": "ai",
+    "difficulty": 4,
+    "term": "Grounding",
+    "question": "Grounding a model’s answer means…",
+    "correct": "Tying it to verifiable sources or data you provided",
+    "distractors": [
+      "Lowering its temperature to zero",
+      "Restricting it to short answers",
+      "Training it on physical-world sensor data"
+    ],
+    "explanation": "A grounded answer is based on specific, checkable material, often with citations. It is one of the main defenses against hallucination."
+  },
+  {
+    "id": 58,
+    "category": "ai",
+    "difficulty": 4,
+    "term": "Prompt injection",
+    "question": "Prompt injection is…",
+    "correct": "Hidden or malicious instructions in content that try to hijack a model’s behavior",
+    "distractors": [
+      "Adding examples to a prompt to improve answers",
+      "Sending many prompts at once to go faster",
+      "Pasting a prompt into a design file"
+    ],
+    "explanation": "Prompt injection hides instructions in a web page, email or file the model reads. AI features need confirmation steps before risky actions."
+  },
+  {
+    "id": 59,
+    "category": "ai",
+    "difficulty": 3,
+    "term": "Few-shot prompting",
+    "question": "Few-shot prompting means…",
+    "correct": "Including a few examples of the input and output you want in the prompt",
+    "distractors": [
+      "Limiting the model to a few words",
+      "Asking the same question a few times and averaging",
+      "Training a model from scratch on very little data"
+    ],
+    "explanation": "Few-shot prompting shows the model what good looks like. Zero-shot gives no examples, only instructions."
+  },
+  {
+    "id": 60,
+    "category": "ai",
+    "difficulty": 4,
+    "term": "Evals",
+    "question": "In AI product work, ‘evals’ are…",
+    "correct": "Structured tests that measure how well a model or prompt performs on defined tasks",
+    "distractors": [
+      "Annual performance reviews for AI teams",
+      "User satisfaction surveys",
+      "The model’s training logs"
+    ],
+    "explanation": "Evals are test sets with clear pass criteria. They show whether a prompt or model change made things better or worse before users find out."
+  }
 ]
