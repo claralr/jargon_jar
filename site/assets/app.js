@@ -77,6 +77,40 @@
   }
   var scrollEl = $('[data-hud="scroll"]');
 
+  /* ---------- HUD: total visits from Umami ----------
+     Fill in shareId to turn it on: Umami > Websites > Edit > Share URL > enable,
+     then copy the last part of the share link (…/share/THIS-PART/…).
+     If the ID is missing or the request fails, the item stays hidden. */
+  var UMAMI = { host: "https://cloud.umami.is", shareId: "YOUR-UMAMI-SHARE-ID" };
+  var visitsBox = $("[data-hud-visits]"), visitsEl = $('[data-hud="visits"]');
+  function showVisits(n) {
+    if (!visitsBox || !visitsEl || !(n >= 0)) return;
+    visitsEl.textContent = Number(n).toLocaleString("en-GB");
+    visitsBox.hidden = false;
+  }
+  function num(v) { return v && typeof v === "object" ? v.value : v; }
+  if (visitsBox && UMAMI.shareId && UMAMI.shareId.indexOf("YOUR-") !== 0 && window.fetch) {
+    var cached = null;
+    try { cached = JSON.parse(sessionStorage.getItem("jj-visits") || "null"); } catch (e) {}
+    if (cached && Date.now() - cached.t < 600000) showVisits(cached.n);
+    else {
+      fetch(UMAMI.host + "/api/share/" + encodeURIComponent(UMAMI.shareId))
+        .then(function (r) { if (!r.ok) throw 0; return r.json(); })
+        .then(function (sh) {
+          return fetch(UMAMI.host + "/api/websites/" + sh.websiteId + "/stats?startAt=0&endAt=" + Date.now(),
+            { headers: { "x-umami-share-token": sh.token } });
+        })
+        .then(function (r) { if (!r.ok) throw 0; return r.json(); })
+        .then(function (st) {
+          var n = num(st.visits);
+          if (!(n >= 0)) n = num(st.pageviews);
+          showVisits(n);
+          try { sessionStorage.setItem("jj-visits", JSON.stringify({ n: n, t: Date.now() })); } catch (e) {}
+        })
+        .catch(function () {});
+    }
+  }
+
   /* ---------- Scroll-linked effects (one rAF loop) ---------- */
   var timeline = $(".timeline"), tlFill = $(".timeline-line span");
   var cards = $$(".stack-card");
