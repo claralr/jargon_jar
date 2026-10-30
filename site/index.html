@@ -17,12 +17,11 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<meta name="theme-color" content="#FBF8F3" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#151210" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#151210">
 <script>
-/* Runs before paint: theme, and whether to show the preloader (first visit per session, motion allowed). */
+/* Runs before paint: theme (dark by default, light only if the visitor chose it), and whether to show the preloader (first visit per session, motion allowed). */
 (function(){var d=document.documentElement;d.classList.add("js");
-try{var t=localStorage.getItem("jj-theme");if(t==="dark"||t==="light")d.setAttribute("data-theme",t)}catch(e){}
+var t="dark";try{var st=localStorage.getItem("jj-theme");if(st==="light")t=st}catch(e){}d.setAttribute("data-theme",t);
 var rm=window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches,seen=false;
 try{seen=sessionStorage.getItem("jj-seen")==="1"}catch(e){}
 d.classList.add(!rm&&!seen?"is-preloading":"is-ready");})();
