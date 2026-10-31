@@ -81,7 +81,11 @@
      Fill in shareId to turn it on: Umami > Websites > Edit > Share URL > enable,
      then copy the last part of the share link (…/share/THIS-PART/…).
      If the ID is missing or the request fails, the item stays hidden. */
-  var UMAMI = { host: "https://cloud.umami.is", shareId: "YOUR-UMAMI-SHARE-ID" };
+  var UMAMI = {
+    shareId: "T0gHhHNxna1OC9cZ",
+    // Umami Cloud has served its share API from more than one path; try each in turn.
+    apis: ["https://cloud.umami.is/api", "https://cloud.umami.is/analytics/eu/api", "https://cloud.umami.is/analytics/us/api"]
+  };
   var visitsBox = $("[data-hud-visits]"), visitsEl = $('[data-hud="visits"]');
   function showVisits(n) {
     if (!visitsBox || !visitsEl || !(n >= 0)) return;
@@ -94,13 +98,16 @@
     try { cached = JSON.parse(sessionStorage.getItem("jj-visits") || "null"); } catch (e) {}
     if (cached && Date.now() - cached.t < 600000) showVisits(cached.n);
     else {
-      fetch(UMAMI.host + "/api/share/" + encodeURIComponent(UMAMI.shareId))
-        .then(function (r) { if (!r.ok) throw 0; return r.json(); })
-        .then(function (sh) {
-          return fetch(UMAMI.host + "/api/websites/" + sh.websiteId + "/stats?startAt=0&endAt=" + Date.now(),
-            { headers: { "x-umami-share-token": sh.token } });
-        })
-        .then(function (r) { if (!r.ok) throw 0; return r.json(); })
+      var getStats = function (api) {
+        return fetch(api + "/share/" + encodeURIComponent(UMAMI.shareId))
+          .then(function (r) { if (!r.ok) throw 0; return r.json(); })
+          .then(function (sh) {
+            return fetch(api + "/websites/" + sh.websiteId + "/stats?startAt=0&endAt=" + Date.now(),
+              { headers: { "x-umami-share-token": sh.token } });
+          })
+          .then(function (r) { if (!r.ok) throw 0; return r.json(); });
+      };
+      UMAMI.apis.reduce(function (p, api) { return p.catch(function () { return getStats(api); }); }, Promise.reject())
         .then(function (st) {
           var n = num(st.visits);
           if (!(n >= 0)) n = num(st.pageviews);
